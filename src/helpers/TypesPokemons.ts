@@ -82,12 +82,12 @@ export const TypesPokemons: PokemonObjectLiterals = {
       'https://archives.bulbagarden.net/media/upload/0/01/Battrio_Ice_type.png',
   },
   dragon: {
-    name: '',
+    name: 'Dragões',
     urlImg:
       'https://archives.bulbagarden.net/media/upload/5/51/Battrio_Dragon_type.png',
   },
   dark: {
-    name: '',
+    name: 'Sombrio',
     urlImg:
       'https://archives.bulbagarden.net/media/upload/0/0f/Battrio_Dark_type.png',
   },
