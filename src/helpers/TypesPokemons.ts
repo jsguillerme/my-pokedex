@@ -92,7 +92,7 @@ export const TypesPokemons: PokemonObjectLiterals = {
       'https://archives.bulbagarden.net/media/upload/0/0f/Battrio_Dark_type.png',
   },
   fairy: {
-    name: '',
+    name: 'Mágico',
     urlImg:
       'https://archives.bulbagarden.net/media/upload/c/c6/Fairy_icon_SwSh.png',
   },
