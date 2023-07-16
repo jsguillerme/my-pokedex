@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { pokemonType } from '@/interfaces/IPokemon'
 import { TypesPokemons } from '@/helpers/TypesPokemons'
+import Link from 'next/link'
 
 async function getPokemon(pokemon: string) {
   const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
@@ -18,10 +19,12 @@ export default async function Pokemon({
   const pokemonInfo: pokemonType = await getPokemon(params.pokemon)
 
   return (
-    <div className="w-full h-screen grid place-content-center dark:bg-gradient-to-r from-red-300 to-orange-700">
+    <div className="w-full min-w-[550px] h-screen grid place-content-center dark:bg-gradient-to-r from-red-300 to-orange-700">
       <div className="bg-red-500 w-[500px] max-w-[500px] rounded-lg shadow-2xl drop-shadow-2xl">
         <div className="flex items-start justify-start w-full h-[140px] gap-3 p-4 drop-shadow-2xl border-b-2 border-b-zinc-900 mb-4">
-          <div className="bg-blue-500 h-24 w-24 rounded-full border-4 border-zinc-300 shadow-2xl drop-shadow-2xl"></div>
+          <div className="bg-blue-500 h-24 w-24 rounded-full border-4 border-zinc-300 shadow-2xl drop-shadow-2xl flex items-center justify-center text-white font-bold">
+            <Link href={'/'}>Retornar</Link>
+          </div>
           <div className="bg-red-800 rounded-full h-6 w-6 border-2 border-zinc-300"></div>
           <div className="bg-yellow-400 rounded-full h-6 w-6 border-2 border-zinc-300"></div>
           <div className="bg-green-800 rounded-full h-6 w-6 border-2 border-zinc-300"></div>
